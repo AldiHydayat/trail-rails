@@ -1,0 +1,14 @@
+<h1>Add New Books</h1>
+
+<%= form_for @book, url: new_book_path  do |f| %>
+    <%= f.label :title, 'Title' %> <br>
+    <%= f.text_field :title %> <br>
+
+    <%= f.label :page, 'Page' %> <br>
+    <%= f.text_field :page %> <br>
+
+    <%= f.label :price, 'price' %> <br>
+    <%= f.text_field :price %> <br>
+
+    <%= f.submit 'Submit' %>
+<% end %>

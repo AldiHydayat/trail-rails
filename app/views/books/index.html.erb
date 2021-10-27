@@ -1,0 +1,23 @@
+<h1>Books Data</h1>
+
+<h3><%= link_to "New Book", new_book_path %></h3>
+
+<table border="1px">
+    <thead>
+        <th>#</th>
+        <th>Title</th>
+        <th>Page</th>
+        <th>Option</th>
+    </thead>
+    <tbody>
+    <% i = 1 %>
+        <% @books.each do |book| %>
+            <tr>
+                <td><%= i %></td>
+                <td><%= book.title %></td>
+                <td><%= book.page %></td>
+                <% i= i+1 %>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
