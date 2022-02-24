@@ -7,25 +7,13 @@ class BooksController < ApplicationController
         @book= Book.new
     end
 
-    def create
-        
-    end
+    def create; end
     
-    def show
-        
-    end
+    def show; end
     
-    def edit
+    def edit; end
 
-    end
+    def update; end
 
-    def update
-        
-    end
-
-    def destroy
-        
-    end
-    
-    
+    def destroy; end
 end
